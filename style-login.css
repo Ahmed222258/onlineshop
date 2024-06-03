@@ -1,0 +1,157 @@
+body{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*--------------------- logo Area----------*/
+#header #myh1{  
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 72px;
+        padding-right: 20px;
+        border-right: 3px solid black;
+        cursor: pointer;    
+}
+#header #logo{  
+    width: 167px;
+    height: 167px;
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/*--------------------- Email Area----------*/
+#inputs #email-box img{
+    cursor: pointer;
+    padding-right: 2px;
+    margin-right: 5px;
+    padding-top: 2px;
+    
+
+}
+#inputs #email-box #email-text{
+    font-size: 35px;
+    width: 500px;
+    height: 35px;
+    border: 0px;
+    padding-left: 10px;
+    border-left:2px solid rgb(0, 0, 0);
+    
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#inputs #email-box{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+}
+/*--------------------- pass Area----------*/
+#inputs #pass-box{
+    margin-top:50px;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    
+}
+#inputs #pass-box #pass-text{
+    font-size: 35px;
+    width: 500px;
+    height: 35px;
+    border: 0px;
+    padding-left: 10px;
+    border-left:2px solid rgb(0, 0, 0);
+}
+#inputs #pass-box img{
+    cursor: pointer;
+    padding-right: 2px;
+    margin-right: 5px;
+    padding-top: 2px;
+
+}
+/*--------------------- info Area----------*/
+#info #i-lbl h2{
+display: inline;
+padding-left: 40px;
+
+
+}
+ #info{
+    margin-top: 20px;
+    width: 550px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    margin-left: 160px;
+    
+ }
+ #i-lbl{
+    position: relative;
+    padding: 5px 12px;
+    border: 2px solid black;
+    border-radius: 40px;
+    
+ }
+#info #i-lbl a{
+    text-decoration: underline;
+    color: red;
+    margin-left: 4px;
+ }
+ #info #i-lbl img{
+    position: absolute;
+    margin-top: -3px;
+ }
+/*--------------------- buttons Area----------*/
+#buttons{
+    margin-top: 40px;
+    padding-left: 50px;
+    width: 550px;
+    height: 100px;
+}
+#buttons #login-btn{
+    width: 40%;
+    height:70px;
+    border-radius: 25px;
+    font-size: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10%;
+    background-color: hsl(0, 0%, 100%);
+    transition: 0.2s ease-in;
+}
+#buttons #login-btn:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+#buttons #cancel-btn:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+#buttons #cancel-btn{
+    width: 40%;
+    height:70px;
+    border-radius: 25px;
+    font-size: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+#login-btn:hover{
+    color: hsl(0, 0%, 0%);
+}
+

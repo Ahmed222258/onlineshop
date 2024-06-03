@@ -1,0 +1,275 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    overflow-x: hidden;
+
+}
+#nav{
+    
+    width: 90%;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    overflow: hidden;
+
+
+}
+
+#logo h1{
+    font-family: "Pacifico", cursive;
+    font-size: 60px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+#logo a{
+    transition:ease-in 0.1s;
+}
+
+#toggle{
+    display: none;
+    flex-direction: column;
+    align-items: baseline;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+}
+#toggle #bar{
+    width: 30px;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    margin: 5px 0px;
+    
+}
+#pages ul{
+    display: flex;
+}
+#pages{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#pages ul li a{
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.2s;
+    margin: 0 5px;
+    cursor: pointer;
+    
+}
+#pages #login{
+    display: none;
+}
+#pages ul .login-class {
+    display: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.2s;
+    margin: 0 5px;
+    cursor: pointer;
+    
+}
+
+#pages img{
+    width: 30px;
+    margin: 10px;
+    cursor: pointer;
+    transition:ease-out 0.2s;
+}
+#icons{
+
+    margin: 10px 0px 10px 80px;
+}
+#pages img:hover{
+    width: 33px;
+    margin: 10px;
+    cursor: pointer;
+}
+#pages .login-class:hover{
+    background-color: black;
+    color: white;
+
+}
+
+.line{
+    margin-left: 50px;
+    width: 0px;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    transition: 0.3s;
+
+}
+.hov{ 
+    margin-left: 20px;
+    width: 70%;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+.out{
+    margin-left: 20px;
+    width: 70%;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+/* .hov:hover{
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+
+} */
+#new ul li .h{
+    background-color:rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+#pop-up{
+    position: absolute;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.pop-up-content{
+    background-color: aliceblue;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    z-index: 1;
+}
+#bacground{
+    background-color: rgba(0, 0, 0, 0.3);
+    width:100%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+    cursor: pointer;
+}
+#bg-main{
+    width: 600px;
+    margin-top: 9%;
+    margin-right: 5%;
+    position: fixed;
+    z-index: -5;
+}
+#bg-main img{
+    width:100%;
+    transition: all 1s;
+}
+
+              /* responsive */
+@media only screen and (max-width:1100px){
+    #nav{
+        padding: 0 30px;
+    }
+    #pages #icons{
+       display: none;
+    }
+    
+}
+@media only screen and (max-width:800px){
+    #toggle{
+        display: block;
+        
+    }
+    #pages{
+        display: none;
+    }
+    #bg-main img{
+        width:100%;
+        margin-top: 10%;
+    }
+    #toggle.ac{
+        transform: rotate(270deg);
+        transition: 0.3s ease-in-out;
+    }
+    #pages.active{
+        background-color: rgb(254, 255, 253);
+        border: 3px solid black;
+        height: 439px;
+        border-radius:30px ;
+        position: absolute;
+        top:60px;
+        right: 0;
+        width: 30%;
+        transition: 0.1s;
+        display: flex;
+        flex-direction: column;
+    }
+    #pages ul{
+        display: block;
+        width: fit-content;
+        
+        margin: 30px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+    }
+    #pages ul li a{
+        border: 3px solid black;
+        margin:8px 0 0 0;
+        border-radius: 10px;
+    }
+    #pages ul li .line{width:0;}
+    #pages #icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: end;
+        width: 100%;
+        margin: 40px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+    }
+    #pages li a:hover{
+        background-color: black;
+        color: white;
+        
+    }
+    #pages ul .login-class {
+        border: 3px solid black;
+        margin:8px 0 0 0;
+        border-radius: 10px;
+    }
+    
+}
+@media only screen and (max-width:790px){
+    
+    #logo {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+    }
+    #logo a{
+        padding: 30%;
+    }
+}
+

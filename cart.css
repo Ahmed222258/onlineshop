@@ -1,0 +1,114 @@
+
+.cart-container{
+    position: absolute;
+    width: 23%;
+    height: 80%;
+    top: 80px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.401);
+    display: none;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: 0.2s;
+
+}
+.cart-content{
+    width: 100%;
+    height: 90%;
+    padding: 0px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: baseline;
+    align-content: baseline;
+    justify-content: baseline;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    transition: 0.2s;
+
+}
+.itm input{
+    width: 50px;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    transition: 0.2s;
+
+}
+.cart-container button{
+    width: 90%;
+    height: 70%rem;
+    align-self: center;
+    margin: 10px 0px 5px;
+    overflow: hidden;
+    background-color: aliceblue;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.cart-container h3{
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    width: 95%;
+    align-self: center;
+    border: 2px solid black;
+    transition: 0.2s;
+
+}
+.itm{
+    display: flex;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    border-bottom: 3px solid black;
+    text-align: center;
+    justify-content: baseline;
+    align-items: center;
+    position: relative;
+    transition: 0.2s;
+
+
+}
+.cart-container .close{
+    width: 12px;
+    align-self: baseline;
+    position: absolute;
+    right: 15px;
+    top:5px;
+    cursor: pointer; 
+    transition: 0.3s ease;
+    border: 0px solid black;
+}
+.close :hover{
+  border: 3px solid black;
+}
+.cart-container img{
+    width: 20%;
+    margin: 0px; 
+    transition: 0.2s;
+
+}
+.cart-container span{
+    transition: 0.3s;
+}
+.cart-container span .price{
+    font-size: 18px;
+    margin-left: 100px;
+    margin-top: 20px;
+    color: rgb(178, 2, 2);
+}
+.cart-container span h1{
+    font-size: 20px;
+}
+
+@media only screen and (max-width:800px){
+    .cart-container{
+        width: 45%;
+    }
+}

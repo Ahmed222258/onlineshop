@@ -1,0 +1,139 @@
+
+:root {
+    --primary-font: "Roboto", sans-serif;
+  }
+  
+  /* Products */
+  main{
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s;
+    margin-left: 1%;
+  }
+  .hoodies {
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center; /*importan*/
+    transition: 0.3s;
+
+  }
+  
+  .hoodies .product-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    align-items: baseline;
+    margin: 0px;
+    max-width: 80%;
+    min-width: 10%;
+  }
+  
+  .hoodies .product-items-container .item {
+    margin: 10px;
+  }
+  
+  .hoodies .product-items-container .item-layer {
+    /* background: #ebf1f0; */
+    /* padding: 40px; */
+    /* margin-right: 20px; */
+    /* margin-left: 20px; */
+    margin: 40px;
+    margin-bottom: 0px;
+  }
+  
+  .hoodies .product-items-container .item-layer img {
+    width: 180px;
+  }
+  
+  .hoodies .product-items-container .item .item-name {
+    font-family: var(--primary-font);
+    margin-bottom: 10px;
+    text-align: center;
+  
+  }
+  
+  .hoodies .product-items-container .item .item-price {
+    font-family: var(--primary-font);
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .hoodies .product-items-container .item .view-product {
+    font-family: var(--primary-font);
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+  .button {
+      border: none;
+      color: rgb(255, 255, 255);
+      padding: 10px 35px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 13px;
+      margin: 5px 60px;
+      cursor: pointer;
+      background-color: black;
+      font-family: var(--primary-font);
+      transition: 0.3s;
+    }
+    @media only screen and (max-width:800px){
+
+    }
+ /* shirts */
+ .shirts {
+  display: none;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center; /*importan*/
+  transition: 0.3s;
+  margin: 20px 0px 0 90px;
+}
+
+.shirts .product-items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: baseline;
+  align-items: baseline;
+  margin: 0px;
+  max-width: 90%;
+  min-width: 10%;
+}
+
+.shirts .product-items-container .item {
+  margin: 10px;
+}
+
+.shirts .product-items-container .item-layer {
+  /* background: #ebf1f0; */
+  /* padding: 40px; */
+  /* margin-right: 20px; */
+  /* margin-left: 20px; */
+  margin: 40px;
+  margin-bottom: 0px;
+}
+
+.shirts .product-items-container .item-layer img {
+  width: 180px;
+}
+
+.shirts .product-items-container .item .item-name {
+  font-family: var(--primary-font);
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+
+.shirts .product-items-container .item .item-price {
+  font-family: var(--primary-font);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.shirts .product-items-container .item .view-product {
+  font-family: var(--primary-font);
+  margin-bottom: 10px;
+  text-decoration: none;
+}
